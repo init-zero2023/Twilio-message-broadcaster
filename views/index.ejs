@@ -1,0 +1,29 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container mt-5">
+    <form action="/" method="POST">
+        <div class="card text-center">
+            <div class="card-header">
+              Enter Message
+            </div>
+            <div class="card-body">
+                <textarea class="form-control" id="message" name="message" placeholder="Enter Message" rows="3"></textarea>
+              <button type="submit" class="btn btn-primary mt-2">Send Message</button>
+            </div>
+        </div>
+    </form>
+
+    <form method="POST" action="/addcontact">
+        <div class="form-group row card-body">
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="contact" name="contact" placeholder="Enter contact number">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    
+</div>
+
+
+
+<%- include("partials/footer.ejs") %>
